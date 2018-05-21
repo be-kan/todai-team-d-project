@@ -1,0 +1,61 @@
+*{
+  padding: 3px;
+  font-weight: normal;
+}
+
+body{
+  background-color:#f1ffcc;
+  font:
+}
+
+h1{
+  text-align: center;
+  margin-top: 125px;
+　font-family:'Avenir','Osaka',sans-serif;
+  border-bottom: dashed 1px black;
+
+}
+/*ul li{
+  list-style-type: disc;
+   padding: 0; margin: 0;
+}
+
+ul a{
+  padding: 1px; display: block;
+}*/
+
+
+.textbox{
+text-align: center;
+}
+
+
+}
+.youtuber{
+  float: left;
+  display:block;
+  width:320px;
+  height: 220px;
+}
+
+,h5,h6,ul{
+  margin-left: 5px;
+  list-style-type:none;
+}
+
+
+footer{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 180px;
+  background-color: #EEE8AA;
+
+
+}
+.foo{
+  text-align: center;
+}

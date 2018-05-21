@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 import urllib
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, instance_relative_config=True)
+app.config.from_pyfile('flask.cfg')
 
 
 @app.route('/')

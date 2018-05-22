@@ -20,27 +20,36 @@ def kikakin():
 
 @app.route('/youtube_sample')
 def youtube_sample():
-    youtube_url = 'https://www.googleapis.com/youtube/v3/channels?'
+    channel_url = 'https://www.googleapis.com/youtube/v3/channels?'
+    play_list_url = 'https://www.googleapis.com/youtube/v3/playlistItems?'
+    channel_id = 'UCZf__ehlCEBPop-_sldpBUQ'
     youtube_key = app.config['YOUTUBE_KEY']
 
-    param = {
-        'part': 'statistics',
-        'id': 'UCZf__ehlCEBPop-_sldpBUQ',
+    channel_param = {
+        'part': 'contentDetails',
+        'id': channel_id,
         'key': youtube_key
     }
 
-    paramStr = urllib.parse.urlencode(param)
+    paramStr = urllib.parse.urlencode(channel_param)
+    with urllib.request.urlopen(channel_url + paramStr) as res:
+        channel_data = json.loads(res.read().decode("utf-8"))
 
-    with urllib.request.urlopen(youtube_url + paramStr) as res:
-        data = json.loads(res.read().decode("utf-8"))
+    play_list_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
 
-    print(data)
+    play_list_param = {
+        'part': 'snippet',
+        'playlistId': play_list_id,
+        'maxResults': 50,
+        'key': youtube_key
+    }
 
-    subsc = int(data['items'][0]['statistics']['subscriberCount'])
-    num_video = int(data['items'][0]['statistics']['videoCount'])
-    num_view = int(data['items'][0]['statistics']['viewCount'])
+    paramStr = urllib.parse.urlencode(play_list_param)
+    with urllib.request.urlopen(play_list_url + paramStr) as res:
+        play_list_data = json.loads(res.read().decode("utf-8"))
 
-    return render_template('sample_be-kan.html', subsc=subsc, num_video=num_video, num_view=num_view)
+    return render_template('sample_be-kan.html', data=play_list_data)
+
 
 @app.route('/twitter_sample')
 def twitter_sample():

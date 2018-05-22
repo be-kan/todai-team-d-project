@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import urllib
 import json
+from requests_oauthlib import OAuth1Session
+
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('flask.cfg')
@@ -42,9 +44,10 @@ def youtube_sample():
 
 @app.route('/twitter_sample')
 def twitter_sample():
-    import json
-    from requests_oauthlib import OAuth1Session
-    twitter = OAuth1Session(API_KEY,API_SECRET,ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
+    twitter = OAuth1Session(app.config['API_KEY'],
+                            app.config['API_SECRET'],
+                            app.config['ACCESS_TOKEN'],
+                            app.config['ACCESS_TOKEN_SECRET'])
 
     url = "https://api.twitter.com/1.1/statuses/user_timeline.json"
 

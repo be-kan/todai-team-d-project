@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import urllib
 import json
+from requests_oauthlib import OAuth1Session
+
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('flask.cfg')
@@ -39,6 +41,30 @@ def youtube_sample():
     num_view = int(data['items'][0]['statistics']['viewCount'])
 
     return render_template('sample_be-kan.html', subsc=subsc, num_video=num_video, num_view=num_view)
+
+@app.route('/twitter_sample')
+def twitter_sample():
+    twitter = OAuth1Session(app.config['API_KEY'],
+                            app.config['API_SECRET'],
+                            app.config['ACCESS_TOKEN'],
+                            app.config['ACCESS_TOKEN_SECRET'])
+
+    url = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+
+    params ={
+                'count' : 100,
+                'screen_name':'hikakin'
+            }
+    req = twitter.get(url, params = params)
+    timeline = json.loads(req.text)
+
+    tweet_text = []
+    tweet_time = []
+    for tweet in timeline:
+        tweet_text.append(tweet["text"])
+        tweet_time.append(tweet["created_at"])
+
+    return render_template('sample_nakatomotoi.html', tweet_text=tweet_text, tweet_time=tweet_time)
 
 
 if __name__ == "__main__":

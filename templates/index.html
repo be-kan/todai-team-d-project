@@ -1,1 +1,67 @@
-This is index.html
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <title>You Tuber analytics</title>
+      <link rel="stylesheet" href="../static/style.css">
+      <link rel="stylesheet" type="text/css" href="../static/slick.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="../static/slick-theme.css" media="screen" />
+    </head>
+   <body>
+   　　<header>
+     　　<h1>You Tuber analitics</h1>
+   　　</header>
+   　　<section class="textbox">
+             <h2>今注目を集めているYoutuber</h2>
+             <h4>今まで注目を集めてきたYoutuber達を紹介しよう</h4>
+      </section>
+      <ul class ="fade">
+
+             <li><a href="hajimesyatyo.html"><img src="../static/HAJIME2017ufes.jpg" alt="はじめしゃちょー" width="310px" height="210px" ></a></li>
+             <li><a href="hikakin.html"><img src="../static/HIKAKIN_at_UFES2017.jpg" alt="ヒカキン" width="310px" height="210px"  ></a></li>
+             <li><a href="seikin.html"><img src="../static/SEIKIN_2017.png" alt="セイキン"width="310px" height="210px" ></a></li>
+             <li><a href="kinositayuka.html"><img src="../static/YUUKAKINOSITA2017.jpg" alt="木下ゆうか"width="310px" height="210px" ></a></li>
+             <li><a href="susuru.html"><img src="../static/SUSURU.png" alt="SUSURU"width="310px" height="210px" ></a></li>
+             <li><a href="mizutamari.html"><img src="../static/MIZUTAMARI.jpg" alt="水たまりボンド"width="310px" height="210px" ></a></li>
+      </ul>
+      </section>
+      <footer>
+             <section class="foo">
+       <p>posted by team D</p>
+       <p>Copyright 2018</p>
+      </section>
+      </footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript"src="../static/slick.min.js"></script>
+<script type="text/javascript">
+$('.fade').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+</script>
+
+</body>
+</html>

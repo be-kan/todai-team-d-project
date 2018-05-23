@@ -1,0 +1,69 @@
+*{
+  padding: 3px;
+  font-weight: normal;
+}
+
+body{
+  background-color:#000000;
+  font:
+}
+
+h1{
+  text-align: center;
+  margin-top: 125px;
+　font-family:'Avenir','Osaka',sans-serif;
+  border-bottom: dashed 1px white;
+  color:white;
+}
+h2{
+  color:white;
+}
+
+
+.textbox{
+text-align: center;
+}
+
+
+
+
+,h5,h6,{
+  margin-left: 5px;
+  list-style-type:none;
+}
+
+
+p{
+  margin-bottom:0;
+  margin-right:0;
+  color: white;
+
+
+
+
+}
+.foo{
+  text-align: center;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+img {
+    max-width: 100%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+}

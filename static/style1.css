@@ -5,7 +5,7 @@
 
 body{
   background-color:black;
-  font:
+
 }
 
 h1{
@@ -29,7 +29,7 @@ float:left;
   float:left;
 }
 .textBox3{
-  clear: both;
+  clear:both;
   border-bottom:dashed 1px white;
   text-align: center;
   margin-top: 40px;
@@ -37,16 +37,18 @@ float:left;
 
 
 .textBox4{
-  float: left;
+
+  float:left;
 }
 
 .textBox5{
   float:left;
 }
 
-,h5,h6,{
+h5 h6 {
   margin-left: 5px;
   list-style-type:none;
+  color:white;
 }
 
 

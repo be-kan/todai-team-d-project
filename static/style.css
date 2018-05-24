@@ -12,7 +12,7 @@ h1{
   text-align: center;
   margin-top: 125px;
 　font-family:'Avenir','Osaka',sans-serif;
-  border-bottom: dashed 1px white;
+  border-bottom: double 1px white;
   color:white;
 }
 h2{
@@ -27,7 +27,7 @@ text-align: center;
 
 
 
-,h5,h6,{
+h5,h6,{
   margin-left: 5px;
   list-style-type:none;
 }
@@ -42,6 +42,12 @@ p{
 
 
 }
+#contents1,#contents2,#contents3,#contents4,#contents5,#contents6{
+
+  border-bottom: dashed 1px white;
+  color:white;
+}
+
 footer{
   text-align: right;
   font-weight:100;

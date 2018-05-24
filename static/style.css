@@ -42,8 +42,11 @@ p{
 
 
 }
-.foo{
-  text-align: center;
+footer{
+  text-align: right;
+  font-weight:100;
+  font-family: monospace;
+  clear:both;
 }
 .slick-prev:before,
 .slick-next:before {

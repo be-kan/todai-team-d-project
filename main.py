@@ -161,27 +161,98 @@ def youtube_sample():
 
 @app.route('/twitter_sample')
 def twitter_sample():
-    twitter = OAuth1Session(app.config['API_KEY'],
-                            app.config['API_SECRET'],
-                            app.config['ACCESS_TOKEN'],
-                            app.config['ACCESS_TOKEN_SECRET'])
+    # twitter = OAuth1Session(app.config['API_KEY'],
+    #                         app.config['API_SECRET'],
+    #                         app.config['ACCESS_TOKEN'],
+    #                         app.config['ACCESS_TOKEN_SECRET'])
+    #
+    # url = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+    #
+    # params ={
+    #             'count' : 100,
+    #             'screen_name':'hikakin'
+    #         }
+    # req = twitter.get(url, params = params)
+    # timeline = json.loads(req.text)
+    #
+    # tweet_text = []
+    # tweet_time = []
+    # for tweet in timeline:
+    #     tweet_text.append(tweet["text"])
+    #     tweet_time.append(tweet["created_at"])
 
-    url = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+    recent_tweet_ranking{
+        '1': {
+          'text': 'ついに公開！→【YouTubeテーマソング／ヒカキン＆セイキン 】https://youtu.be/WJzSBLCaKc8  @YouTubeさんから',  # OK
+          'retweet_count':1133,
+          'favolite_count':2019,
+          'date': '2015/08/14'
+        },
+        '2': {
+          'text': 'UUUMから新しいアプリを出しました！マイクラPEやモンストがどこでも話しながらマルチプレイ出来る『おしゃべりマルチ！』是非使ってみて下さい♪
+https://appsto.re/jp/sK0o8.i ',  # OK
+          'retweet_count':943,
+          'favolite_count':1781,
+          'date': '2015/08/20'
+        },
+        '3': {
+          'text': 'YouTubeテーマソング100万再生突破！
+          ご視聴ありがとうございます（ ;  ; ）
+          http://youtu.be/WJzSBLCaKc8 ',  # OK
+          'retweet_count':544,
+          'favolite_count':1842,
+          'date': '2015/08/15'
+        },
+        '4': {
+          'text': '駄目な人のアラームはこちら
+          寝る(-_-)zzz',  # OK
+          'retweet_count':526,
+          'favolite_count':2062,
+          'date': '2015/08/13'
+        },
+        '5': {
+          'text': '夜通しの撮影終了。
+          髪の毛がスプレーでパリパリ。',  # OK
+          'retweet_count':443,
+          'favolite_count':1994,
+          'date': '2015/08/16'
+        }
+    }
+    old_tweet_ranking{
+        '1': {
+          'text': '実家でOFFしてるんでテレビ見てるんですが、凄く可愛い子が出てて気になって調べたら桃色クローバーZってグループのセンターの子だとわかった。これは桃色クローバーZ応援するしかねぇな。。。',  # OK
+          'retweet_count':142,
+          'favolite_count':29,
+          'date': '2012/12/28'
+        }
+        '2': {
+          'text': 'HIKAKIN×PDS×長渕蓮！
+          これからディナーo(^_^)o',  # OK
+          'retweet_count':129,
+          'favolite_count':69,
+          'date': '2012/12/27'
+        }
+        '3': {
+          'text': '地元のスーパーで中学生が声かけてくれた＼(^o^)／僕もセイキンもマスクしてたのにわかるって凄いね。改めてYouTubeやネットの力に驚かされました☆',  # OK
+          'retweet_count':75,
+          'favolite_count':42,
+          'date': '2012/12/29'
+        }
+        '4': {
+          'text': '変態マッサージャーマスオがみんなにマッサージを施し中',  # OK
+          'retweet_count':71,
+          'favolite_count':27,
+          'date': '2012/12/30'
+        }
+        '5': {
+          'text': '松井秀喜さんの引退会見改めて見たけど、カッコよすぎ。。。あの柔らかい感じとか言動の一つ一つから偉大さを感じる。レベルが違いすぎる。。。',  # OK
+          'retweet_count':64,
+          'favolite_count':20,
+          'date': '2012/12/28'
+        }
+    }
 
-    params ={
-                'count' : 100,
-                'screen_name':'hikakin'
-            }
-    req = twitter.get(url, params = params)
-    timeline = json.loads(req.text)
-
-    tweet_text = []
-    tweet_time = []
-    for tweet in timeline:
-        tweet_text.append(tweet["text"])
-        tweet_time.append(tweet["created_at"])
-
-    return render_template('sample_nakatomotoi.html', tweet_text=tweet_text, tweet_time=tweet_time)
+    return render_template('sample_nakatomotoi.html', recent_tweet_ranking = recent_tweet_ranking, old_tweet_ranking = old_tweet_ranking)
 
 
 if __name__ == "__main__":

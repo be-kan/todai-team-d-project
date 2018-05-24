@@ -52,92 +52,74 @@ def youtube_sample():
       '1': {
         'image_url': 'http://i.ytimg.com/vi/WJzSBLCaKc8/hqdefault.jpg',  # OK
         'view_count': 68158348,
-        'date': '2015/08/14'
+        'date': '2015/08/14',
+        'title': 'YouTubeテーマソング／ヒカキン＆セイキン'
       },
       '2': {
         'image_url': 'http://i.ytimg.com/vi/fWIR4T1Y48E/hqdefault.jpg',  # OK
         'view_count': 20112729,
-        'date': '2016/01/15'
+        'date': '2016/01/15',
+        'title': '鬼から電話がかかってきた。。。'
       },
       '3': {
         'image_url': 'http://i.ytimg.com/vi/x0WIWGAreS4/hqdefault.jpg',  # OK
         'view_count': 19702799,
-        'date': '2015/02/13'
+        'date': '2015/02/13',
+        'title': '【大食い】2.5kgジャンボ餃子大食い対決！ヒカキン vs 木下ゆうか'
       },
       '4': {
         'image_url': 'http://i.ytimg.com/vi/O4vG1_Sa9VE/hqdefault.jpg',  # OK
         'view_count': 18213009,
-        'date': '2014/11/08'
+        'date': '2014/11/09',
+        'title': '【【マインクラフト】ヒカキンのマイクラ実況 Part1 いきなりまさかの展開 !?'
       },
       '5': {
         'image_url': 'http://i.ytimg.com/vi/pni05ZkWioQ/hqdefault.jpg',  # OK
         'view_count': 16804364,
-        'date': '2013/11/09'
+        'date': '2013/11/09',
+        'title': 'ホラーゲーム】青鬼を実況プレイ！Part1 - ヒカキンゲームズ(HikakinGames)'
       },
       '6': {
         'image_url': 'http://i.ytimg.com/vi/oQSoETD63io/hqdefault.jpg',  # OK
         'view_count': 16197952,
-        'date': '2014/04/26'
+        'date': '2014/04/26',
+        'title': '風呂で氷漬けになってみた！ロッテ爽キャンペーン！'
       },
       '7': {
         'image_url': 'http://i.ytimg.com/vi/UmgiPORUg5g/hqdefault.jpg',  # OK
         'view_count': 16090236,
-        'date': '2017/06/04'
+        'date': '2017/06/04',
+        'title': '【◯◯◯万円!?】店のもの全部下さいって言ったら超大変なことになった…'
       },
       '8': {
         'image_url': 'http://i.ytimg.com/vi/DHa-dcNP00M/hqdefault.jpg',  # OK
         'view_count': 15561651,
-        'date': '2014/07/19'
+        'date': '2014/07/19',
+        'title': 'ストレス解消グッズ『つぶしてくださいな』投げつけてみた！'
       },
       '9': {
         'image_url': 'http://i.ytimg.com/vi/l59ozZ8PzqU/hqdefault.jpg',  # OK
         'view_count': 14992612,
-        'date': '2015/10/26'
+        'date': '2015/10/26',
+        'title': 'スーパーボールくじで大当たりを当てるぜ！'
       },
       '10': {
         'image_url': 'http://i.ytimg.com/vi/C4rOeTU0Vt4/hqdefault.jpg',  # OK
         'view_count': 14756540,
-        'date': '2013/07/25'
+        'date': '2013/07/25',
+        'title': '超巨大たこ焼き作ってみた！'
       },
       '11': {
         'image_url': 'http://i.ytimg.com/vi/C3uJ-p0Olww/hqdefault.jpg',  # OK
         'view_count': 14148196,
-        'date': '2015/09/11'
+        'date': '2015/09/11',
+        'title': 'コカ・コーラ自動販売機型冷蔵庫買ってみた！'
       },
       '12': {
         'image_url': 'http://i.ytimg.com/vi/Fze4EAhW2w0/hqdefault.jpg',  # OK
         'view_count': 14143857,
-        'date': '2015/03/22'
-      },
-      '13': {
-        'image_url': 'http://i.ytimg.com/vi/JGG09Oow8EE/hqdefault.jpg',  # OK
-        'view_count': 13766063,
-        'date': '2015/02/20'
-      },
-      '14': {
-        'image_url': 'http://i.ytimg.com/vi/VLGeisJwXQ0/hqdefault.jpg',  # OK
-        'view_count': 13745224,
-        'date': '2015/04/08'
-      },
-      '15': {
-        'image_url': 'http://i.ytimg.com/vi/ow9QW8vot2M/hqdefault.jpg',  # OK
-        'view_count': 13428395,
-        'date': '2014/06/27'
-      },
-      '16': {
-        'image_url': 'http://i.ytimg.com/vi/HggbvHbIvlY/hqdefault.jpg',  # OK
-        'view_count': 13306027,
-        'date': '2014/08/07'
-      },
-      '17': {
-        'image_url': 'http://i.ytimg.com/vi/R708o7d2uUg/hqdefault.jpg',  # OK
-        'view_count': 13289503,
-        'date': '2013/01/06'
-      },
-      '18': {
-        'image_url': 'http://i.ytimg.com/vi/4DmWPUhZ8lM/hqdefault.jpg',  # OK
-        'view_count': 12854020,
-        'date': '2014/10/06'
+        'date': '2015/03/22',
+        'title': 'LUSHのバスボム全種類一気に入れてお風呂入ってみた！'
       }
     }
 
@@ -145,27 +127,32 @@ def youtube_sample():
       '1': {
         'image_url': 'http://i.ytimg.com/vi/LE-JN7_rxtE/hqdefault.jpg',  # OK
         'view_count': 42782625,
-        'date': '2010/06/17'
+        'date': '2010/06/17',
+        'title': 'Super Mario Beatbox'
       },
       '2': {
-        'image_url': 'http://i.ytimg.com/vi/COoKRYk-HWU/hqdefault.jpg',  # OK
-        'view_count': 25683642,
-        'date': '2012/06/22'
-      },
-      '3': {
         'image_url': 'http://i.ytimg.com/vi/x5NRmFSTEgU/hqdefault.jpg',  # OK
         'view_count': 33828785,
-        'date': '2012/05/09'
+        'date': '2012/05/09',
+        'title': 'BEST SKRILLEX BEATBOX'
+      },
+      '3': {
+        'image_url': 'http://i.ytimg.com/vi/COoKRYk-HWU/hqdefault.jpg',  # OK
+        'view_count': 25683642,
+        'date': '2012/06/22',
+        'title': 'Beatbox Game - Hikakin vs Daichi'
       },
       '4': {
         'image_url': 'http://i.ytimg.com/vi/oT4vLQZJHPY/hqdefault.jpg',  # OK
         'view_count': 12572477,
-        'date': '2010/11/16'
+        'date': '2010/11/16',
+        'title': 'Eminem - Not Afraid Beatbox'
       },
       '5': {
         'image_url': 'http://i.ytimg.com/vi/oGaLDnvvZyE/hqdefault.jpg',  # OK
         'view_count': 10901539,
-        'date': '2010/08/05'
+        'date': '2010/08/05',
+        'title': 'Lady Gaga - Bad Romance Beatbox'
       }
     }
 

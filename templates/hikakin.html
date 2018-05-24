@@ -30,6 +30,7 @@
    <section class="textBox3">
      <h2>twitter・youtubeの軌跡</h2>
    </section>
+   <section class="textBox7">
    <section class="textBox4">
 <form><input type="text" name="time" list="example" placeholder="検索年(から)">
   <datalist id="example">
@@ -44,9 +45,10 @@
   <option value="2010"></option>
   </datalist>
 </form>
-<p>{{recent_ranking["1"]["image_url"]}}</p>
-<form><input type="text" name="time" list="example" placeholder="検索年（まで）">
-  <datalist id="example">
+<form>
+  <input type="text" name="time" list="example" placeholder="検索年（まで）">
+
+<datalist id="example">
   <option value="2018"></option>
   <option value="2017"></option>
   <option value="2016"></option>
@@ -57,10 +59,22 @@
   <option value="2011"></option>
   <option value="2010"></option>
   </datalist>
-
 </form>
-
-   </section>
+</section>
+<section class="textBox6">
+{% for i in recent_youtube_ranking %}
+            <table id="t">
+             <tr>
+                 <td valign="top">{{i.image_ranking}}</td>
+                 <td valign="top">{{i.view_count}}</td>
+                 <td valign="top">{{i.date}}</td>
+                 <td valign="top">{{i.title}}</td>
+            </tr>
+            </table>
+             {% endfor %}
+</section>
+</section>
+<section class="textBox8">
    <section class="textBox5">
      <form><input type="text" name="time" list="example" placeholder="検索年(から)">
        <datalist id="example">
@@ -91,13 +105,14 @@
      </form>
 
    </section>
+ </section>
    <footer>
 
        <p>posted by team D Copyright 2018</p>
 
    </footer>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-      <script src="../js/jquery.bgswitcher.js"></script>
+      <script src="../static/jquery.bgswitcher.js"></script>
       <script>
       jQuery(function($) {
           $('.bg-slider').bgSwitcher({

@@ -9,7 +9,7 @@ def index():
 
 
 @app.route('/hikakin')
-def kikakin():
+def hikakin():
     recent_youtube_ranking = {
       '1': {
         'image_url': 'http://i.ytimg.com/vi/WJzSBLCaKc8/hqdefault.jpg',  # OK

@@ -44,6 +44,17 @@ float:left;
 .textBox5{
   float:left;
 }
+.textBox6{
+  clear: both;
+}
+.textBox7{
+  float: left;
+  width: 50%;
+}
+.textBox8{
+  float:left;
+
+}
 
 h5 h6 {
   margin-left: 5px;
@@ -58,7 +69,9 @@ p{
   color: white;
   font-size-adjust: auto;
 
-
+#t{
+  color:white;
+}
 
 }
 footer{

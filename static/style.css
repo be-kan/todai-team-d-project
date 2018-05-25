@@ -38,16 +38,17 @@ text-align: center;
 
 
 
-h5,h6,{
+h5,h6{
   margin-left: 5px;
   list-style-type:none;
+  color:white;
 }
 
 
 p{
   margin-bottom:0;
   margin-right:0;
-  color: white;
+  color:#c3c3c3;
 
 
 

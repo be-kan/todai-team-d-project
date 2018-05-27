@@ -184,7 +184,6 @@ def hikakin():
         }
     }
 
-
     return render_template('hikakin.html',
                             recent_youtube=recent_youtube_ranking,
                             old_youtube=old_youtube_ranking,

@@ -62,10 +62,10 @@
 </form>
 </section>
 <section class="textBox6">
-{% for i in recent_youtube_ranking %}
-            <table id="t">
+{% for i in recent_youtube %}
+            <table>
              <tr>
-                 <td valign="top">{{i.image_ranking}}</td>
+                 <td valign="top">{{i.image_url}}</td>
                  <td valign="top">{{i.view_count}}</td>
                  <td valign="top">{{i.date}}</td>
                  <td valign="top">{{i.title}}</td>
@@ -116,7 +116,7 @@
       <script>
       jQuery(function($) {
           $('.bg-slider').bgSwitcher({
-              images: ['../static/HIKAKIN1.png','../static/HIKAKIN2.png','../static/HIKAKIN3.png','../static/HIKAKIN4.png'],
+              images: ['../static/HIKAKIN1.png','../static/HIKAKIN2.png','../static/HIKAKIN3.png','../static/HIKAKIN4.png','../static/HIKAKIN5.png','../static/HIKAKIN6.png',],
           });
       });
       </script>

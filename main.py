@@ -56,7 +56,7 @@ def hikakin():
       '8': {
         'image_url': 'http://i.ytimg.com/vi/DHa-dcNP00M/hqdefault.jpg',  # OK
         'view_count': 15561651,
-        'date': '2014/07/19',
+  'date': '2014/07/19',
         'title': 'ストレス解消グッズ『つぶしてくださいな』投げつけてみた！'
       },
       '9': {
@@ -94,8 +94,45 @@ def hikakin():
       },
       '2': {
         'image_url': 'http://i.ytimg.com/vi/x5NRmFSTEgU/hqdefault.jpg',  # OK
-        'view_count': 33828785,
-        'date': '2012/05/09',
+        'view_count': 33828785,'date': '2014/07/19',
+        'title': 'ストレス解消グッズ『つぶしてくださいな』投げつけてみた！'
+      },
+      '9': {
+        'image_url': 'http://i.ytimg.com/vi/l59ozZ8PzqU/hqdefault.jpg',  # OK
+        'view_count': 14992612,
+        'date': '2015/10/26',
+        'title': 'スーパーボールくじで大当たりを当てるぜ！'
+      },
+      '10': {
+        'image_url': 'http://i.ytimg.com/vi/C4rOeTU0Vt4/hqdefault.jpg',  # OK
+        'view_count': 14756540,
+        'date': '2013/07/25',
+        'title': '超巨大たこ焼き作ってみた！'
+      },
+      '11': {
+        'image_url': 'http://i.ytimg.com/vi/C3uJ-p0Olww/hqdefault.jpg',  # OK
+        'view_count': 14148196,
+        'date': '2015/09/11',
+        'title': 'コカ・コーラ自動販売機型冷蔵庫買ってみた！'
+      },
+      '12': {
+        'image_url': 'http://i.ytimg.com/vi/Fze4EAhW2w0/hqdefault.jpg',  # OK
+        'view_count': 14143857,
+        'date': '2015/03/22',
+        'title': 'LUSHのバスボム全種類一気に入れてお風呂入ってみた！'
+      }
+    }
+
+    old_youtube_ranking1 = {
+      '1': {
+        'image_url': 'http://i.ytimg.com/vi/LE-JN7_rxtE/hqdefault.jpg',  # OK
+        'view_count': 42782625,
+        'date': '2010/06/17',
+        'title': 'Super Mario Beatbox'
+      },
+      '2': {
+        'image_url': 'http://i.ytimg.com/vi/x5NRmFSTEgU/hqdefault.jpg',  # OK
+        'view_count': 33828785,'date': '2012/05/09',
         'title': 'BEST SKRILLEX BEATBOX'
       },
       '3': {
@@ -105,8 +142,7 @@ def hikakin():
         'title': 'Beatbox Game - Hikakin vs Daichi'
       },
       '4': {
-        'image_url': 'http://i.ytimg.com/vi/oT4vLQZJHPY/hqdefault.jpg',  # OK
-        'view_count': 12572477,
+        'image_url': 'http://i.ytimg.com/vi/oT4vLQZJHPY/hqdefault.jpg',  # OK'view_count': 12572477,
         'date': '2010/11/16',
         'title': 'Eminem - Not Afraid Beatbox'
       },
@@ -145,8 +181,7 @@ def hikakin():
         },
         '5': {
           'text': '夜通しの撮影終了。 髪の毛がスプレーでパリパリ。',  # OK
-          'retweet_count': 443,
-          'favolite_count': 1994,
+          'retweet_count': 443,'favolite_count': 1994,
           'date': '2015/08/16'
         }
     }
@@ -184,15 +219,13 @@ def hikakin():
         }
     }
 
-
     return render_template('hikakin.html',
-                            recent_youtube_ranking=recent_youtube_ranking,
-                            old_youtube_ranking=old_youtube_ranking,
-                            recent_tweet_ranking=recent_tweet_ranking,
-                            old_tweet_ranking=old_tweet_ranking
+                            recent_youtube=recent_youtube_ranking,
+                            old_youtube=old_youtube_ranking1,
+                            recent_tweet=recent_tweet_ranking,
+                            old_tweet=old_tweet_ranking
                           )
-
-
+    
 @app.route('/youtube_sample')
 def youtube_sample():
     # channel_url = 'https://www.googleapis.com/youtube/v3/channels?'
@@ -224,7 +257,6 @@ def youtube_sample():
     #     play_list_data = json.loads(res.read().decode("utf-8"))
 
     return render_template('sample_be-kan.html')
-
 
 @app.route('/twitter_sample')
 def twitter_sample():
